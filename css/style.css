@@ -1,0 +1,156 @@
+:root {
+    --bleu-fonce: #1A2B49;
+    --rose-pale: #FCDAD7;
+    --rose-accent: #E8A5A5;
+    --blanc: #FFFFFF;
+    --gris-clair: #FAFAFA;
+    --texte-sombre: #333333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--blanc);
+    color: var(--texte-sombre);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Sécurité Anti-Téléchargement --- */
+img, video {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* --- Navigation --- */
+header {
+    background-color: var(--bleu-fonce);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: var(--rose-pale);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--blanc);
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--rose-pale);
+}
+
+/* --- Sections Générales --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+h1, h2, h3 {
+    color: var(--bleu-fonce);
+}
+
+.btn-cta {
+    background-color: var(--rose-pale);
+    color: var(--bleu-fonce);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-cta:hover {
+    background-color: var(--rose-accent);
+    transform: scale(1.02);
+}
+
+/* --- Accueil --- */
+.hero {
+    background: linear-gradient(135deg, var(--bleu-fonce) 60%, var(--rose-pale));
+    color: var(--blanc);
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--blanc);
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Défilement des logos */
+.logos-container {
+    background-color: var(--gris-clair);
+    padding: 40px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: slide 25s infinite linear;
+}
+
+.logos-slide img {
+    height: 60px;
+    margin: 0 40px;
+    vertical-align: middle;
+}
+
+@keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* Grilles (Portfolio, Prestations, Blog) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: var(--blanc);
+    border: 1px solid var(--rose-pale);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: relative;
+    padding: 20px;
+}
+
+.card-img {
+    margin: -20px -20px 20px -20px;
+    position: relative;
+}
+
+.protection-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 10;
+}
+
+footer {
+    background-color: var(--bleu-fonce);
+    color: var(--blanc);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: auto;
+}
