@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Clara Curtenel, Community Manager Freelance</title>
+  <meta name="description" content="Découvrez les réalisations de Clara Curtenel : vidéo corporate diffusée en stade, gestion de la communication de Digitag Memory et autres projets de community management." />
+  <link rel="canonical" href="https://clara-curtenel.com/portfolio.html" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+<body>
+
+<nav class="navbar" aria-label="Navigation principale">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-name">Clara Curtenel</span>
+      <span class="nav-logo-title">Community Manager Freelance</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="prestations.html">Prestations</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html" class="btn btn-pink nav-cta">Parlons de votre projet →</a>
+    </div>
+    <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" role="navigation">
+  <a href="index.html">Accueil</a>
+  <a href="prestations.html">Prestations</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="blog.html">Blog</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="contact.html" class="btn btn-pink" style="text-align:center">Parlons de votre projet →</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="page-hero">
+  <div class="container">
+    <span class="badge animate-up delay-1">Mes réalisations</span>
+    <h1 class="animate-up delay-2">Mon <span class="italic" style="color:var(--pink)">portfolio</span></h1>
+    <p class="animate-up delay-3">Des productions concrètes qui illustrent mon expertise. Chaque projet raconte une histoire différente.</p>
+  </div>
+</section>
+
+<!-- ═══ FILTRES ═══ -->
+<section class="portfolio-filters-bar">
+  <div class="container">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="video">Vidéo</button>
+      <button class="filter-btn" data-filter="social">Réseaux sociaux</button>
+      <button class="filter-btn" data-filter="strategie">Stratégie</button>
+      <button class="filter-btn" data-filter="contenu">Création de contenu</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROJETS ═══ -->
+<section class="section-pad portfolio-main">
+  <div class="container">
+    <div class="portfolio-full-grid">
+
+      <!-- PROJET 1 : Vidéo stade -->
+      <div class="project-card portfolio-protected reveal" data-category="video">
+        <div class="project-visual">
+          <!--
+            INSTRUCTIONS : Remplacez le contenu ci-dessous par votre vidéo.
+            Créez un fichier "videos/video-stade.mp4" dans le dossier du site.
+            La vidéo est protégée : pas de téléchargement, pas de clic droit.
+          -->
+          <div class="project-media-wrapper">
+            <video
+              class="project-video"
+              playsinline
+              muted
+              loop
+              controlsList="nodownload nofullscreen"
+              disablePictureInPicture
+              oncontextmenu="return false"
+              poster="images/portfolio/video-stade-poster.jpg"
+            >
+              <source src="videos/video-stade.mp4" type="video/mp4" />
+              <!-- Fallback si le fichier n'est pas encore là -->
+              <div class="video-placeholder">
+                <span>🎬</span>
+                <p>Vidéo à importer</p>
+              </div>
+            </video>
+            <div class="video-overlay" id="videoOverlay1">
+              <button class="play-btn" onclick="playVideo(this)">▶</button>
+            </div>
+            <div class="project-protect-badge">🔒 Contenu protégé</div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Vidéo corporate</span>
+            <span class="project-tag">Production</span>
+          </div>
+          <h2>Présentation d'entreprise<br />diffusée en grand stade</h2>
+          <p>Production et réalisation complète d'une vidéo de présentation d'entreprise diffusée sur les écrans géants d'un stade de football lors d'un match important. Un format exigeant qui demande du rythme, de l'impact et une maîtrise parfaite du message.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <span class="detail-label">Type</span>
+              <span class="detail-value">Vidéo corporate</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Diffusion</span>
+              <span class="detail-value">Grand stade de football</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Contexte</span>
+              <span class="detail-value">Match en direct</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJET 2 : Digitag Memory -->
+      <div class="project-card portfolio-protected reveal" data-category="social">
+        <div class="project-visual">
+          <!--
+            INSTRUCTIONS : Ici vous pouvez mettre des captures d'écran des réseaux
+            de Digitag Memory. Créez des fichiers dans "images/portfolio/digitag/"
+            et renseignez-les dans le slider ci-dessous.
+          -->
+          <div class="project-media-wrapper">
+            <div class="project-slider" id="slider2">
+              <div class="slider-track">
+                <!-- Remplacez par vos vraies captures -->
+                <div class="slide-placeholder">
+                  <span>📱</span>
+                  <p>Captures Instagram<br />Digitag Memory</p>
+                </div>
+                <!-- Exemple avec images :
+                <img src="images/portfolio/digitag/post-1.jpg" alt="Post Digitag Memory" draggable="false" />
+                <img src="images/portfolio/digitag/post-2.jpg" alt="Post Digitag Memory" draggable="false" />
+                -->
+              </div>
+              <button class="slider-prev" onclick="slideProject('slider2', -1)">‹</button>
+              <button class="slider-next" onclick="slideProject('slider2', 1)">›</button>
+            </div>
+            <div class="project-protect-badge">🔒 Contenu protégé</div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Community Management</span>
+            <span class="project-tag">Startup</span>
+          </div>
+          <h2>Digitag Memory –<br />Communication de startup</h2>
+          <p>Gestion complète de la stratégie de communication digitale de Digitag Memory, une startup innovante. De la définition de la ligne éditoriale à l'animation quotidienne des réseaux sociaux, en passant par la création des contenus et l'analyse des performances.</p>
+          <div class="project-details">
+            <div class="detail-item">
+              <span class="detail-label">Client</span>
+              <span class="detail-value">Digitag Memory</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Mission</span>
+              <span class="detail-value">CM & stratégie digitale</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Plateformes</span>
+              <span class="detail-value">Instagram, LinkedIn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Message pour futurs projets -->
+    <div class="portfolio-coming reveal" style="margin-top: 4rem; text-align: center;">
+      <div class="coming-card">
+        <span>✨</span>
+        <h3>D'autres projets arrivent…</h3>
+        <p>Je documente régulièrement mes nouvelles réalisations. Revenez bientôt !</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Discutons de votre projet →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section reveal">
+  <div class="container">
+    <div class="cta-box">
+      <span class="badge badge--navy">Votre projet ici ?</span>
+      <h2>Créons quelque chose ensemble.</h2>
+      <p>Ce portfolio ne demande qu'à grandir. Faites partie des prochaines réalisations !</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">Démarrer un projet →</a>
+        <a href="prestations.html" class="btn btn-outline-white">Mes prestations</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-name">Clara Curtenel</p>
+        <p class="footer-brand-tagline">Community Manager Freelance</p>
+        <p class="footer-desc">Je transforme votre présence digitale en véritable levier de croissance.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Instagram">in</a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">Li</a>
+          <a href="#" class="social-icon" aria-label="TikTok">Tk</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="prestations.html">Prestations</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@clara-curtenel.com">contact@clara-curtenel.com</a></li>
+          <li><a href="contact.html">Formulaire de contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Clara Curtenel. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Remonter">↑</button>
+<script src="js/main.js"></script>
+<script>
+// ── Protection contenus portfolio ──
+document.addEventListener('contextmenu', e => {
+  if (e.target.closest('.portfolio-protected')) e.preventDefault();
+});
+document.addEventListener('keydown', e => {
+  // Bloquer Ctrl+S, Ctrl+U, F12 sur les éléments protégés
+  if ((e.ctrlKey && ['s','u','p'].includes(e.key.toLowerCase())) || e.key === 'F12') {
+    e.preventDefault();
+  }
+});
+document.querySelectorAll('.portfolio-protected img, .portfolio-protected video').forEach(el => {
+  el.setAttribute('draggable', 'false');
+  el.addEventListener('dragstart', e => e.preventDefault());
+});
+
+// ── Lecture vidéo ──
+function playVideo(btn) {
+  const wrapper = btn.closest('.project-media-wrapper');
+  const video = wrapper.querySelector('video');
+  const overlay = wrapper.querySelector('.video-overlay');
+  if (video) {
+    video.play();
+    video.controls = true;
+    video.setAttribute('controlsList', 'nodownload');
+    overlay.style.opacity = '0';
+    overlay.style.pointerEvents = 'none';
+  }
+}
+
+// ── Slider ──
+const sliderIndexes = {};
+function slideProject(sliderId, dir) {
+  const slider = document.getElementById(sliderId);
+  if (!slider) return;
+  const track = slider.querySelector('.slider-track');
+  const slides = track.children;
+  sliderIndexes[sliderId] = sliderIndexes[sliderId] || 0;
+  sliderIndexes[sliderId] = (sliderIndexes[sliderId] + dir + slides.length) % slides.length;
+  track.style.transform = `translateX(-${sliderIndexes[sliderId] * 100}%)`;
+}
+
+// ── Filtres ──
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.project-card').forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.style.display = '';
+        card.style.opacity = '1';
+      } else {
+        card.style.opacity = '0';
+        setTimeout(() => { card.style.display = 'none'; }, 300);
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
