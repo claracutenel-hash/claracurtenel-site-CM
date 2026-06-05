@@ -44,6 +44,22 @@
 </head>
 <body>
 
+<!-- ═══ CORRECTION CSS RAPIDE POUR LE HEADER ═══ -->
+<style>
+  /* Empêche le chevauchement en espaçant le logo et les liens */
+  .navbar-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  /* Cache le menu mobile sur les écrans d'ordinateur pour éviter les doublons */
+  @media (min-width: 992px) {
+    .nav-mobile {
+      display: none !important;
+    }
+  }
+</style>
+
 <!-- ═══ NAVBAR ═══ -->
 <nav class="navbar" aria-label="Navigation principale">
   <div class="navbar-inner">
@@ -57,7 +73,8 @@
       <a href="portfolio.html">Portfolio</a>
       <a href="blog.html">Blog</a>
       <a href="a-propos.html">À propos</a>
-      <a href="contact.html" class="btn btn-pink nav-cta">Parlons de votre projet →</a>
+      <!-- Ajout du style inline pour forcer le texte en noir -->
+      <a href="contact.html" class="btn btn-pink nav-cta" style="color: #000000; font-weight: 600;">Parlons de votre projet →</a>
     </div>
     <button class="nav-burger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -72,9 +89,9 @@
   <a href="portfolio.html">Portfolio</a>
   <a href="blog.html">Blog</a>
   <a href="a-propos.html">À propos</a>
-  <a href="contact.html" class="btn btn-pink" style="text-align:center">Parlons de votre projet →</a>
+  <!-- Ajout du style inline pour forcer le texte en noir sur mobile aussi -->
+  <a href="contact.html" class="btn btn-pink" style="text-align:center; color: #000000; font-weight: 600;">Parlons de votre projet →</a>
 </div>
-
 <!-- ═══ HERO ═══ -->
 <section class="hero" aria-label="Présentation">
   <div class="hero-bg"></div>
